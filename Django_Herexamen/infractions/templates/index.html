@@ -1,0 +1,12 @@
+<h1>Overtredingen : </h1>
+<br/>
+<ul>
+    {% for q in data1 %}
+    {% if q.infractions_speed >= infractions_speed %}
+    <br>
+        <li>{{ q.street }}</li>
+        <li>{{ q.speed_limit }}</li>
+        <li>{{ q.infractions_speed }}</li>
+        {% endif %}
+	{% endfor %}
+</ul>
